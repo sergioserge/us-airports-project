@@ -1,34 +1,37 @@
-API Project: Bad weather and flight delays: The impact of weather events.
+# Bad weather and flight delays: The impact of weather events.
+
 The research center for aerospace you work for as Data Analyst wants to keep track of accumlated flights data in combination with weather data. Your task is to find a situation where the weather has impacted on flight performance and use this to contribute some knowledge about how different weather affects flights in different cities.
-Brainstorming (Choose a month/year that you want to explore further.)
+
+## Brainstorming (Choose a month/year that you want to explore further.)
+
 Airports for Hurrican Sandy 2012/10 on the east coast
-Boston (Massachusetts) Edward Lawrence Logan International Airport (BOS)
-Miami (Florida) International Airport (MIA)
-New Jersey (New Jersey) Newark Liberty International (EWR)
-New York (New York) John F. Kennedy International Airport (JFK)
-Philadelphia (Pennsylvania) Philadelphia International Airport (PHL)
+- Boston (Massachusetts) Edward - Lawrence Logan International Airport (BOS)
+- Miami (Florida) International Airport (MIA)
+- New Jersey (New Jersey) Newark Liberty International (EWR)
+- New York (New York) John F. Kennedy International Airport (JFK)
+Philadelphia (Pennsylvania) 
+- Philadelphia International Airport (PHL)
 Others: Delaware, Maryland, Washington D.C., Virginia, West Virginia
 
-# Storm Tracking: https://www.tableau.com/solutions/gallery/storm-tracking
+Storm Tracking: https://www.tableau.com/solutions/gallery/storm-tracking
 Hypothesis
 
-
-
-# Meteostat: https://dev.meteostat.net/formats.html#meteorological-parameters
-# Worst airports: https://www.forbes.com/sites/jamesasquith/2020/01/05/what-are-the-worst-airports-in-the-world/?sh=3865dce01c3d
-# Extreme weather conditions: https://badbadweather.com/
-# Skytraxratings: https://skytraxratings.com/
+Meteostat: https://dev.meteostat.net/formats.html#meteorological-parameters
+Worst airports: https://www.forbes.com/sites/jamesasquith/2020/01/05/what-are-the-worst-airports-in-the-world/?sh=3865dce01c3d
+Extreme weather conditions: https://badbadweather.com/
+Skytraxratings: https://skytraxratings.com/
 
 Does the API have the data I need for my use case in terms of type, completeness, granularity and accuracy?
 Which meteorological parameters and meteostats have and which units they use?
 What are the weather condition codes?
-Timeline structure
+# Timeline structure
 Brainstorming and Structure
 First Step
 Second Step
 Third Step
 Fourth Step
-Task Steps
+
+# Task Steps
 First: Get data on flights & Set up a connection to our SQL database
 download csv file containing flights data for a specific year and month
 Clean your data (e.g. specify which columns you want to keep, rename columns etc.)
