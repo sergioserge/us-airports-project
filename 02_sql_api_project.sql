@@ -1,7 +1,30 @@
 -- csv file from the website https://transtats.bts.gov
+-- Hypothesis
+-- Cancellation and delays appeared parallel to the hurricane path.
+-- There is a threshold (wind, rain, fog) until the flights are not cancelled.
+-- Many delays up to two weeks after the hurricane.
+
+-- Which columns/data do we need do we need?
+
+SELECT flight_date,
+	   dep_time,
+	   dep_delay,
+	   arr_delay,
+	   airline, -- Difference between airlines
+	   tail_number,
+	   origin,
+	   dest,
+	   diverted,
+	   cancelled
+FROM flights_api_proj_gr4;
 
 
--- Which tables do we need?
+
+
+
+
+
+
 
 -- Show table
 SELECT * FROM flights_api_proj_gr4  AS f

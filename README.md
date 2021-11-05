@@ -20,6 +20,10 @@ Others: Delaware, Maryland, Washington D.C., Virginia, West Virginia
 4. There is a threshold (wind, rain, fog) until the flights are not cancelled.
 2. Many delays up to two weeks after the hurricane.
 
+What data we need?
+- Cancellation date,
+
+
 Others
 1. Flights were cancelled before the hurricane Sandy arrived the coast.
 3. Due to cancellations in New Jersey airport delays were appearing in other airports (dest)
@@ -58,6 +62,9 @@ Sign-up to RapidAPI in order to get access to the Meteostat API
 Use your API key to get weather data for your chosen month/year and locations.
 If necessary flatten your JSON data and transform it into a DataFrame
 Make sure to have primary and foreign keys so that it's possible to join the weather data to your flights data
+
+* Does the API have the data I need for my use case in terms of type, completeness, granularity and accuracy?
+
 
 ## Third: Perform a basic EDA on both of the tables.
 Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have (perhaps linking dep_delay to weather)
