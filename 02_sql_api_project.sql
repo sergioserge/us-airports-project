@@ -19,7 +19,8 @@ SELECT a.faa,
 	   a.name AS name,
 	   a.lat,
 	   a.lon,
-	   a.alt
+	   a.alt,
+	   a.city
 FROM flights_api_proj_gr4 f
 LEFT JOIN airports a
 	ON f.origin = a.faa

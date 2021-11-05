@@ -4,12 +4,14 @@ The research center for aerospace you work for as Data Analyst wants to keep tra
 
 ## Brainstorming (Choose a month/year that you want to explore further.)
 
-Airports for Hurrican Sandy 2012/10 on the east coast
-- Boston (Massachusetts) Edward - Lawrence Logan International Airport (BOS)
-- Miami (Florida) International Airport (MIA)
-- New Jersey (New Jersey) Newark Liberty International (EWR)
-- New York (New York) John F. Kennedy International Airport (JFK)
-- Philadelphia (Pennsylvania) Philadelphia International Airport (PHL)
+Airports for Hurricane Sandy 2012/10 on the east coast
+- Boston (Massachusetts) - Edward - Lawrence Logan International Airport (BOS)
+- Miami (Florida) - International Airport (MIA)
+- Newark (New Jersey) - Newark Liberty International (EWR)
+- New York (New York) - John F. Kennedy International Airport (JFK)
+- Philadelphia (Pennsylvania) - Philadelphia International Airport (PHL)
+- Puerto Rico - Luis Munoz Marin Airport International (SJU)
+
 Others: Delaware, Maryland, Washington D.C., Virginia, West Virginia
 
 - Storm Tracking: https://www.tableau.com/solutions/gallery/storm-tracking
