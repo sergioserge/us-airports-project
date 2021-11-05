@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# database details
+database.ini
+
+# Data
+data/
+
+#DS_Store
+.DS_Store
+
+#Credentials
+creds.py
