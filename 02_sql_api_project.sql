@@ -1,7 +1,7 @@
 /*	This is a csv file from the website https://transtats.bts.gov
 	The timeline is from 2012-10-01 to 2012-11-30
 	It contains flights data from six airports
-	- ['BOS', 'EWR', 'JFK', 'MIA', 'PHI', 'SJU']
+	- ['BOS', 'EWR', 'JFK', 'MIA', 'PHL', 'SJU']
 	- Boston (BOS)
 	- Miami (MIA)
 	- Newark (EWR)
@@ -24,7 +24,7 @@ FROM flights_api_proj_gr4 f
 LEFT JOIN airports a
 	ON f.origin = a.faa
 GROUP BY a.faa, a.name, a.lat, a.lon, a.alt
-HAVING faa IN ( 'BOS', 'EWR', 'JFK', 'MIA', 'PHI', 'SJU' )
+HAVING faa IN ( 'BOS', 'EWR', 'JFK', 'MIA', 'PHL', 'SJU' )
 ORDER BY faa;
 
 
