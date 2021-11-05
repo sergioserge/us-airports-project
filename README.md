@@ -16,6 +16,20 @@ Others: Delaware, Maryland, Washington D.C., Virginia, West Virginia
 
 ## Hypothesis
 
+6. Cancellation and delays appeared parallel to the hurricane path.
+4. There is a threshold (wind, rain, fog) until the flights are not cancelled.
+2. Many delays up to two weeks after the hurricane.
+
+Others
+1. Flights were cancelled before the hurricane Sandy arrived the coast.
+3. Due to cancellations in New Jersey airport delays were appearing in other airports (dest)
+5. Firstly the flights in the south were cancelled.
+
+
+Timeline | wind speed | Cancellation |
+22.10 | 
+31.10 |
+
 - Meteostat: https://dev.meteostat.net/formats.html#meteorological-parameters
 - Worst airports: https://www.forbes.com/sites/jamesasquith/2020/01/05/what-are-the-worst-airports-in-the-world/?sh=3865dce01c3d
 - Extreme weather conditions: https://badbadweather.com/
