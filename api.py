@@ -2,6 +2,7 @@
 import meteostat
 from meteostat import Point, Stations, Daily
 import requests
+import pandas as pd
 
 # import from own modules
 # import credetials for database access and the api key (file not on github)
@@ -14,9 +15,31 @@ def get_api_data():
             'x-rapidapi-host': 'meteostat.p.rapidapi.com',
             'x-rapidapi-key': rapid_api_key}
     
-def get_weather_stations(region):
+def get_weather_stations(region, save_path = None):
     stations = Stations()
     stations_obj = stations.region(region)
-    stations_df = stations_obj.fetch()
+    data = stations_obj.fetch()
 
-    return stations_df
+    if save_path != None:
+            data.to_csv(save_path)
+
+    return data
+
+
+
+def get_weather_daily(meteostat_points_dict, start_date, end_date, save_path = None):
+    df  = pd.DataFrame()
+    for key, values in meteostat_points_dict.items():
+        start = start_date
+        end = end_date
+        point = Point(values[0], values[1])
+
+        data = Daily(point, start, end) 
+        data = data.fetch()
+        data = pd.concat(pd.DataFrame(key, columns='icao'), data)
+        df = pd.concat([df, data], axis=0)
+
+    if save_path != None:
+        data.to_csv(save_path)
+
+    return df
