@@ -1,9 +1,10 @@
 # import python packages 
 import meteostat
+from meteostat import Point, Stations, Daily
 import requests
 
 # import from own modules
-# credetials
+# import credetials for database access and the api key (file not on github)
 from creds import rapid_api_key
 
 
@@ -13,6 +14,9 @@ def get_api_data():
             'x-rapidapi-host': 'meteostat.p.rapidapi.com',
             'x-rapidapi-key': rapid_api_key}
     
-from meteostat import Point, Stations
+def get_weather_stations(region):
+    stations = Stations()
+    stations_obj = stations.region(region)
+    stations_df = stations_obj.fetch()
 
-stations = Stations
+    return stations_df
