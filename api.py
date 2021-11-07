@@ -36,10 +36,10 @@ def get_weather_daily(meteostat_points_dict, start_date, end_date, save_path = N
 
         data = Daily(point, start, end) 
         data = data.fetch()
-        data = pd.concat(pd.DataFrame(key, columns='icao'), data)
+        data.insert(loc=0, column='icao', value=key)
         df = pd.concat([df, data], axis=0)
 
     if save_path != None:
-        data.to_csv(save_path)
+        df.to_csv(save_path)
 
     return df
