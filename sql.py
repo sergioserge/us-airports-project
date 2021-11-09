@@ -26,9 +26,9 @@ def query_database(query_string):
     with engine.connect() as connection:
         result = connection.execute(query_string)
         result = result.fetchall()
-        df = pd.DataFrame(result)
+        #df = pd.DataFrame(result)
     
-    return df
+    return result
 
 # save dataframe to database
 def save_to_db(df, table_name):
